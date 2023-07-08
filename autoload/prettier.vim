@@ -328,8 +328,7 @@ function! s:Get_Prettier_Exec_Args(config) abort
           \ get(a:config, 'htmlWhitespaceSensitivity', g:prettier#config#html_whitespace_sensitivity) .
           \ ' --stdin-filepath "' .
           \ simplify(expand('%:p')) . '"' .
-          \ ' --loglevel error '.
-          \ ' --stdin '
+          \ ' --log-level error '
   return l:cmd
 endfunction
 
